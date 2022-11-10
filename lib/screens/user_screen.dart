@@ -32,14 +32,14 @@ class _UserScreenState extends State<UserScreen> {
             children: [
               RichText(
                   text: const TextSpan(
-                      text: 'Hi, ',
+                      text: 'Ho, ',
                       style: TextStyle(
                           color: Colors.cyan,
                           fontSize: 27,
                           fontWeight: FontWeight.bold),
                       children: <TextSpan>[
                     TextSpan(
-                        text: 'My name',
+                        text: 'Mi nombre',
                         style: TextStyle(
                             color: Colors.black,
                             fontSize: 25,
@@ -58,20 +58,20 @@ class _UserScreenState extends State<UserScreen> {
               ),
               const SizedBox(height: 20),
               _listTiles(
-                  title: 'My perfil',
+                  title: 'Mi perfil',
                   icon: IconlyLight.profile,
                   onPressed: () {}),
               _listTiles(
-                  title: 'Address',
+                  title: 'Dirección',
                   subtitle: 'My subtitle',
                   icon: IconlyLight.profile,
                   onPressed: () async {
                     await _showAddressDialog();
                   }),
               _listTiles(
-                  title: 'Orders', icon: IconlyLight.bag, onPressed: () {}),
+                  title: 'Pedidos', icon: IconlyLight.bag, onPressed: () {}),
               _listTiles(
-                  title: 'Forget Pasword',
+                  title: 'Olvidé password',
                   icon: IconlyLight.unlock,
                   onPressed: () {}),
               _listTiles(
